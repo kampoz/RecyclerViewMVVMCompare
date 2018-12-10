@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class = "NewsBinding">
+        <variable
+            name="newsViewModel"
+            type="com.example.programmer.recyclerviewmvvmcompare.mvvm.viewmodel.NewsViewModel"/>
+
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@{newsViewModel.title}"
+        android:textSize="20dp"
+        android:id="@+id/tvTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@{newsViewModel.desc}"
+        android:textSize="15dp"
+        android:id="@+id/tvDesc"/>
+
+</LinearLayout>
+
+</layout>
